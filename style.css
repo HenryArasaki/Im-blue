@@ -20,6 +20,7 @@ body{
     border-radius: 50%;
     z-index: -1;
     filter: blur(50px);
+    transition: all 0.3s;
 }
 
 .ativo{

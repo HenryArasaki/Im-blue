@@ -2,6 +2,7 @@ const notas = document.querySelectorAll('[data-key]')
 document.addEventListener('keydown',(e)=>{
     notas.forEach(element => {
         if (e.key==element.dataset.key){
+        element.currentTime=0
         element.play()
         fazAnimacao(element)
         }

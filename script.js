@@ -26,7 +26,6 @@ notas.forEach(element=>{
 const bolas = document.getElementsByClassName('bola')
 function fazAnimacao(element){
     for(let bola of bolas){
-        console.log(bola.dataset.key)
         if(element.dataset.key==bola.dataset.key){
             bola.classList.add('ativo')
             setTimeout(()=>bola.classList.remove('ativo'),300)
